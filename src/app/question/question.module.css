@@ -1,0 +1,49 @@
+.container {
+  padding-bottom: 1rem;
+  border-bottom: 0.79px solid #dbdef0;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.answers {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.75rem;
+}
+
+.answer {
+  border: 1px solid var(--color-blue);
+  border-radius: 0.5rem;
+  color: var(--color-navy);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.answer input {
+  display: none;
+}
+
+.answer label {
+  display: block;
+  cursor: pointer;
+  padding: 0.25rem 1rem;
+}
+
+.answer:has(input:checked) {
+  background-color: var(--color-light-blue);
+}
+
+.answer:has(.correct) {
+  background-color: var(--color-success) !important;
+}
+
+.answer:has(input:checked):has(.wrong) {
+  background-color: var(--color-danger) !important;
+}

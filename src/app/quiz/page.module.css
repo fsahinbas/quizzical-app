@@ -1,0 +1,19 @@
+.resultsWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 3.5rem;
+  gap: 1rem;
+}
+
+.btnCheck {
+  width: 120px;
+  background-color: #4d5b9e;
+  border: none;
+  padding: 1rem 0;
+  color: #ffff;
+  border-radius: 1rem;
+  cursor: pointer;
+  font-size: 11.24px;
+  font-weight: 500;
+}
